@@ -1,0 +1,8 @@
+pipeline:
+  mynewtask:
+    image: redis
+    commands:
+      - env
+      - echo "Hello"
+    when:
+      event: push
