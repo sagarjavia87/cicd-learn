@@ -3,6 +3,6 @@ pipeline:
     image: redis
     commands:
       - env
-      - echo "Hello, Hi how are you?"
+      - echo "Hello?"
     when:
       event: push
