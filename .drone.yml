@@ -1,8 +1,15 @@
-pipeline:
-  mynewtask:
-    image: redis
+---
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: linux
+  arсh: amd64
+
+steps:
+  - name: greeting
     commands:
-      - env
-      - echo "Hello  ?"
-    when:
-      event: push
+      - echo hello-world
+
+...
